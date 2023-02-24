@@ -1,0 +1,50 @@
+
+body {
+    font-family: 'Times New Roman', serif;
+    }
+    
+    #calc {
+    width: 250px;
+    background-color: #cccccc;
+    text-align: center;
+    border: outset;
+    padding: 5px;
+    }
+    
+    input {
+    font-family: 'Times New Roman', serif;
+    text-align: right;
+    }
+    
+    input.implement {
+    background-color: rgb(255, 255, 255);
+    }
+    #btnReset{
+    background-color:rgb(255, 255, 255);
+    }
+    
+    #btnCalc{
+    background-color:rgb(252, 255, 252);
+    color:rgb(0, 0, 85);
+    }
+    
+    .ops{
+    background-color:rgb(8, 8, 20);
+    }
+    
+    input[type="button"]{
+    color:ghostwhite;
+    }
+    
+    input[type="button"]:not(.ops){
+    background-color:rgb(158, 0, 0);
+    }
+    
+    #btnIncrement, #btnDecrement{
+    padding-left:0;
+    }
+    
+    #txtNumber{
+    border:0.5px solid rgb(50, 50, 83);
+    border-radius:5px;
+    }

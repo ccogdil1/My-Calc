@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Calculator</title>
+<!-- Meta tag for keywords -->
+<meta name="keywords" content="Calculator">
+<link rel="stylesheet" type="text/css" href="Activity.css" />
+</head>
+
+<body>
+<header>
+<h1>My Calculator</h1>
+<!-- For people who don't have JavaScript enabled-->
+<noscript>This web page requires JavaScript to be enabled
+on your browser.</noscript>
+</header>
+
+<main id="calc">
+
+<!-- form for user input that represents a calculator -->
+<form name="frmCalc" id="frmCalc">
+<p>Use number pad on keyboard or pad below.</p>
+
+<!-- Text Box to enter a numeric value -->
+<input type="text" name="txtNumber" id="txtNumber" value="" size="20" /><br />
+<br />
+
+<!-- Number buttons -->
+<input type="button" value="1" name="btn1" id="btn1" />
+<input type="button" value="2" name="btn2" id="btn2" />
+<input type="button" value="3" name="btn3" id="btn3" />
+
+<input type="button" value="+" name="btnPlus" id="btnPlus" title="Add" class="ops"/><br />
+
+<!-- Number buttons -->
+<input type="button" value="4" name="btn4" id="btn4"/>
+<input type="button" value="5" name="btn5" id="btn5" />
+<input type="button" value="6" name="btn6" id="btn6" />
+
+<input type="button" value="-" name="btnMinus" id="btnMinus" title="Subtract" class="ops"/><br />
+
+<!-- Number buttons -->
+<input type="button" value="7" name="btn7" id="btn7"/>
+<input type="button" value="8" name="btn8" id="btn8" />
+<input type="button" value="9" name="btn9" id="btn9" />
+
+<input type="button" value="*" name="btnMul" id="btnMul" title="Multiply" class="ops"/><br />
+
+<!-- Number buttons -->
+<input type="button" value="0" name="btn0" id="btn0" />
+<input type="button" value="." name="btnDecimal" id="btnDecimal"/>
+<input type="reset" name="btnReset" value="C" id="btnReset" title="Clear"/>
+<input type="button" name="btnDiv" value="/" id="btnDiv" title="Division" class="ops"/><br/>
+
+<input type="button" value="++" name="btnIncrement" id="btnIncrement" title="Increment" class="ops"/>
+<input type="button" value="--" name="btnDecrement" id="btnDecrement" title="Decrement" class="ops"/>
+<input type="button" value="&radic;" name="btnSqrt" id="btnSqrt" title="Square Root" class="ops"/>
+<input type="button" name="btnCalc" value="=" id="btnCalc" title="Calculate"/>
+
+</form>
+
+</main>
+
+<footer id="Validation">
+<br /> <a href="https://validator.w3.org/check?uri=referer">Validate
+HTML</a> <br> <a
+href="https://jigsaw.w3.org/css-validator/check/referer">Validate
+CSS</a>
+
+</footer>
+<!-- JavaScript function declarations -->
+<script src="Activity.js"></script>
+</body>
+</html>
