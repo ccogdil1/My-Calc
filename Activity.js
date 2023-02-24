@@ -2,6 +2,7 @@ var prevCalc = 0;
 var calc = "";
 
 window.onload = function() {
+//Getting number elements from HTML
 document.getElementById("btn0").onclick = showNum;
 document.getElementById("btn1").onclick = showNum;
 document.getElementById("btn2").onclick = showNum;
@@ -13,7 +14,7 @@ document.getElementById("btn7").onclick = showNum;
 document.getElementById("btn8").onclick = showNum;
 document.getElementById("btn9").onclick = showNum;
 document.getElementById("btnDecimal").onclick = showNum;
-
+//Getting function elements from HTML
 document.getElementById("btnPlus").onclick = add;
 document.getElementById("btnMinus").onclick = subtract;
 document.getElementById("btnMul").onclick = mul;
@@ -27,10 +28,11 @@ document.getElementById("btnIncrement").onclick = increment;
 document.getElementById("txtNumber").oninput=filterInput;
 document.getElementById("txtNumber").value = 0;
 }
-
+//Displays current number
 function showNum() {
 document.frmCalc.txtNumber.value+=this.value;
 }
+
 function filterInput(){
 var inp = document.frmCalc.txtNumber;
 inp.value = inp.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');
@@ -115,12 +117,12 @@ if(num!=0){
 total = prevCalc/num;
 }
 else
-total="Math Error.";
+total="Logic Error.";
 }
 document.frmCalc.txtNumber.value = total;
 }
 else
-document.frmCalc.txtNumber.value="Math Error";
+document.frmCalc.txtNumber.value="Logic Error";
 }
 
 function clear() {
